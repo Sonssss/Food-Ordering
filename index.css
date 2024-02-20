@@ -157,13 +157,35 @@ ul{
 
 .box{
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     border-radius: 2.5px;
     display: flex;
     justify-content: center;
     padding-top: 93px;
-    
+    background-color: #222;
+    background-blend-mode: lighten;
 }
+
+.box:hover{
+    background-color: #4e4747;
+    transition: all 1s ease-in-out;
+    background-position: center;
+    box-shadow: 0 0 4px white;
+    cursor: pointer;
+}
+#box-1{
+    grid-column: span 2;
+}
+#box-2{
+    grid-row: span 2;
+}
+#box-3{
+    grid-row: span 2;
+}
+#box-5{
+    grid-column: span 2;
+}
+
 
 
 
