@@ -1,0 +1,33 @@
+@media screen and (max-width:991px){
+    .nav-toogle{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-link{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    /* .header-left{
+        flex-direction: column;
+    } */
+   
+    .header-right{
+        width: 100%;
+        padding-inline: 12px;
+        grid-auto-rows: 100px;
+    }
+    .box {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    .help-bar {
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding: 2rem;
+        gap: 20px;
+      
+      }
+      
+}
