@@ -114,6 +114,7 @@ ul {
 .main-nav {
   justify-content: space-between;
   margin-top: 10px;
+  position: relative;
 }
 
 .nav-link ul {
@@ -125,7 +126,7 @@ ul {
   flex-basis: 730px;
 }
 
-.nav-toogle{
+.nav-toggle{
 display: none;
 }
 

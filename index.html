@@ -21,7 +21,7 @@
           <img src="logo_project-removebg-preview.png" alt="company-logo" />
         </a>
 
-        <div class="nav-link">
+        <div class="nav-link " id="nav-link">
           <ul class="flex">
             <li><a href="#" class="hover-link">Menu</a></li>
             <li><a href="#" class="hover-link">Offers</a></li>
@@ -32,7 +32,7 @@
             </li>
           </ul>
         </div>
-        <a href="#" class=" nav-toogle hover-link" >
+        <a href="#" class=" nav-toggle hover-link" id="nav-toggle" >
           <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
       </div>
@@ -80,7 +80,7 @@
             <div>
               <i class="fa-solid fa-phone-volume"></i><span>01 4278667</span>
             </div>
-            <div>
+            <div class="footer-mail">
               <i class="fa-solid fa-envelope"></i
               ><span>manakamanasweet@gmail.com</span>
             </div>
@@ -117,5 +117,13 @@
     ></script>
 
     <!-- <div class="spacer" style="height: 100vh"></div> -->
+    <script>
+      const toggleButton =document.getElementById('nav-toggle');
+      const navLink = document.getElementById('nav-link');
+
+      toggleButton.addEventListener('click', ()=>{
+        navLink.classList.toggle('active');
+      })
+    </script>
   </body>
 </html>
